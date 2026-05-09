@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LicMan | License Manager</title>
+  <meta name="description" content="LicMan is a bilingual website for License Manager, a desktop application for tracking software licenses, contracts, renewals, roles, and notifications.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="LicMan">
+      <span class="brand-mark">LM</span>
+      <span>LicMan</span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#features" data-i18n="nav.features">Возможности</a>
+      <a href="#pricing" data-i18n="nav.pricing">Цены</a>
+      <a href="#demo" data-i18n="nav.demo">Демо</a>
+      <a href="#screenshots" data-i18n="nav.screens">Скриншоты</a>
+    </nav>
+    <div class="language-switch" role="group" aria-label="Language switcher">
+      <button class="lang-btn is-active" type="button" data-lang="ru">RU</button>
+      <button class="lang-btn" type="button" data-lang="en">EN</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="ornament" aria-hidden="true">
+        <svg viewBox="0 0 1200 160" role="img">
+          <defs>
+            <pattern id="seal-grid" width="120" height="80" patternUnits="userSpaceOnUse">
+              <path d="M18 58h42l10-12h32" fill="none" stroke="currentColor" stroke-width="2" opacity=".18"/>
+              <path d="M24 20h42l8 10h28" fill="none" stroke="currentColor" stroke-width="2" opacity=".2"/>
+              <circle cx="92" cy="44" r="14" fill="none" stroke="currentColor" stroke-width="2" opacity=".22"/>
+              <path d="M86 44l4 4 9-10" fill="none" stroke="currentColor" stroke-width="2" opacity=".28"/>
+            </pattern>
+          </defs>
+          <rect width="1200" height="160" fill="url(#seal-grid)"/>
+          <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3" opacity=".42">
+            <path d="M78 82c58-44 112-44 162 0s104 44 162 0 112-44 162 0 104 44 162 0 112-44 162 0 104 44 162 0"/>
+            <path d="M112 118h146m40 0h146m40 0h146m40 0h146m40 0h146"/>
+            <path d="M220 42h76m154 0h76m154 0h76m154 0h76"/>
+          </g>
+        </svg>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Менеджер лицензий и договоров</p>
+        <h1 data-i18n="hero.title">License Manager</h1>
+        <p class="hero-text" data-i18n="hero.text">Контроль лицензий, договоров, сроков действия, ответственных лиц и уведомлений в одной рабочей программе.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://disk.yandex.ru/d/4qYe74wipzErXQ" target="_blank" rel="noopener" data-i18n="hero.demo">Скачать демо</a>
+          <a class="button secondary" href="#pricing" data-i18n="hero.pricing">Посмотреть цены</a>
+        </div>
+      </div>
+      <figure class="hero-screen">
+        <img data-screenshot="hero" src="assets/licman-main-ru.jpg" alt="License Manager main screen">
+      </figure>
+    </section>
+
+    <section class="section split" id="features">
+      <div>
+        <p class="eyebrow" data-i18n="features.eyebrow">Ключевые возможности</p>
+        <h2 data-i18n="features.title">Все важные лицензии под контролем</h2>
+      </div>
+      <div class="feature-grid">
+        <article>
+          <h3 data-i18n="features.items.0.title">Единый реестр</h3>
+          <p data-i18n="features.items.0.text">Таблица лицензий и договоров с номером договора, контрагентом, названием, датами, ценой, количеством, типом и отделом.</p>
+        </article>
+        <article>
+          <h3 data-i18n="features.items.1.title">Сроки и уведомления</h3>
+          <p data-i18n="features.items.1.text">Контроль окончания лицензий с уведомлениями за 90, 30 и 15 дней через SQL Server Agent и Database Mail.</p>
+        </article>
+        <article>
+          <h3 data-i18n="features.items.2.title">Роли и доступ</h3>
+          <p data-i18n="features.items.2.text">Администратор, супервайзер, пользователь и гость с ограничением доступа по ролям и отделам.</p>
+        </article>
+        <article>
+          <h3 data-i18n="features.items.3.title">Поиск и фильтры</h3>
+          <p data-i18n="features.items.3.text">Поиск по выбранному полю, фильтрация по датам, типу и признаку активности, сортировка по колонкам.</p>
+        </article>
+        <article>
+          <h3 data-i18n="features.items.4.title">Экспорт</h3>
+          <p data-i18n="features.items.4.text">Экспорт текущей таблицы в Excel для отчетности и дальнейшего анализа.</p>
+        </article>
+        <article>
+          <h3 data-i18n="features.items.5.title">Цветовая индикация</h3>
+          <p data-i18n="features.items.5.text">Белый, желтый, оранжевый, красный и черный статусы помогают быстро увидеть приближающиеся и просроченные окончания.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section pricing" id="pricing">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="pricing.eyebrow">Стоимость</p>
+        <h2 data-i18n="pricing.title">Простые варианты покупки и аренды</h2>
+      </div>
+      <div class="price-grid">
+        <article class="price-card">
+          <h3 data-i18n="pricing.buy.title">Покупка</h3>
+          <p class="price" data-price="buy">30 000 руб.</p>
+          <p data-i18n="pricing.buy.extra">+ 3 000 руб. за дополнительное рабочее место</p>
+        </article>
+        <article class="price-card">
+          <h3 data-i18n="pricing.month.title">Аренда на месяц</h3>
+          <p class="price" data-price="month">1 000 руб.</p>
+          <p data-i18n="pricing.month.extra">+ 100 руб. за дополнительное рабочее место</p>
+        </article>
+        <article class="price-card">
+          <h3 data-i18n="pricing.year.title">Аренда на год</h3>
+          <p class="price" data-price="year">10 000 руб.</p>
+          <p data-i18n="pricing.year.extra">+ 1 000 руб. за дополнительное рабочее место</p>
+        </article>
+      </div>
+      <p class="note" data-i18n="pricing.note">В английской версии цены указаны в евро по курсу 100 руб./евро.</p>
+    </section>
+
+    <section class="section demo" id="demo">
+      <div>
+        <p class="eyebrow" data-i18n="demo.eyebrow">Демо-версия</p>
+        <h2 data-i18n="demo.title">Попробуйте программу перед внедрением</h2>
+        <a class="button primary" href="https://disk.yandex.ru/d/4qYe74wipzErXQ" target="_blank" rel="noopener" data-i18n="demo.link">Открыть демо на Яндекс Диске</a>
+      </div>
+      <div class="demo-limits">
+        <h3 data-i18n="demo.limitsTitle">Ограничения демо</h3>
+        <ul>
+          <li data-i18n="demo.limits.0">Используется база данных LicManDemo.</li>
+          <li data-i18n="demo.limits.1">Сохранение и удаление данных заблокированы.</li>
+          <li data-i18n="demo.limits.2">Администрирование пользователей и резервное копирование отключены.</li>
+          <li data-i18n="demo.limits.3">Экспорт ограничен и помечен как DEMO.</li>
+          <li data-i18n="demo.limits.4">Интерфейс помечен как Demonstration mode.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="screenshots">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="screens.eyebrow">Скриншоты</p>
+        <h2 data-i18n="screens.title">Основной экран</h2>
+      </div>
+      <div class="screenshot-grid">
+        <figure class="screenshot">
+          <img src="assets/licman-main-ru.jpg" alt="Главное окно Менеджера лицензий на русском языке">
+          <figcaption data-i18n="screens.captionRu">Русская версия главного окна: редактор лицензии, создание, управление, поиск, фильтр и таблица договоров.</figcaption>
+        </figure>
+        <figure class="screenshot">
+          <img src="assets/licman-main-en.jpg" alt="License Manager main window in English">
+          <figcaption data-i18n="screens.captionEn">English main window: license editor, creation, management, search, filters, and contract table.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>LicMan</span>
+    <a href="https://disk.yandex.ru/d/4qYe74wipzErXQ" target="_blank" rel="noopener" data-i18n="footer.demo">Демо-версия</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
