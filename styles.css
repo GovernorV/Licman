@@ -122,7 +122,7 @@ a {
   position: relative;
   display: block;
   min-height: auto;
-  padding: 142px 0 58px;
+  padding: 180px 0 58px;
   overflow: hidden;
 }
 
@@ -230,8 +230,8 @@ h3 {
 
 .hero-screen {
   position: relative;
-  width: 100%;
-  margin: 48px 0 0;
+  width: auto;
+  margin: 48px clamp(18px, 4vw, 64px) 0;
   min-width: 0;
 }
 
@@ -250,9 +250,6 @@ h3 {
   aspect-ratio: 1920 / 400;
   object-fit: cover;
   object-position: left top;
-  border-left: 0;
-  border-right: 0;
-  border-radius: 0;
 }
 
 .section {
