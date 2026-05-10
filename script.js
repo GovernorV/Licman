@@ -120,16 +120,12 @@ function applyLanguage(lang) {
   document.querySelectorAll(".lang-btn").forEach((button) => {
     button.classList.toggle("is-active", button.dataset.lang === lang);
   });
-  const heroScreenshot = document.querySelector("[data-screenshot='hero']");
-  if (heroScreenshot) {
-    heroScreenshot.src = lang === "en" ? "assets/licman-main-en.jpg" : "assets/licman-main-ru.jpg";
-    heroScreenshot.alt = lang === "en" ? "License Manager main screen" : "Главное окно Менеджера лицензий";
-  }
-  const mainScreenshot = document.querySelector("[data-screenshot='main']");
-  if (mainScreenshot) {
-    mainScreenshot.src = lang === "en" ? "assets/licman-main-en.jpg" : "assets/licman-main-ru.jpg";
-    mainScreenshot.alt = lang === "en" ? "License Manager main window in English" : "Главное окно Менеджера лицензий на русском языке";
-  }
+  const screenshotSrc = lang === "en" ? "assets/licman-main-en.jpg" : "assets/licman-main-ru.jpg";
+  const screenshotAlt = lang === "en" ? "License Manager main window in English" : "Главное окно Менеджера лицензий на русском языке";
+  document.querySelectorAll("[data-screenshot]").forEach((image) => {
+    image.src = screenshotSrc;
+    image.alt = screenshotAlt;
+  });
   localStorage.setItem("licman-language", lang);
 }
 
