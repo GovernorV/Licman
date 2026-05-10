@@ -138,7 +138,9 @@ a {
   pointer-events: none;
 }
 
+.ornament img,
 .ornament svg {
+  display: block;
   width: 100%;
   height: 100%;
 }
