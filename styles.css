@@ -37,9 +37,20 @@ a {
   gap: 28px;
   min-height: 72px;
   padding: 14px clamp(18px, 5vw, 72px);
-  background: rgba(248, 250, 252, .92);
-  border-bottom: 1px solid var(--line);
-  backdrop-filter: blur(14px);
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, .96), rgba(244, 250, 249, .94)),
+    rgba(248, 250, 252, .92);
+  border-bottom: 1px solid rgba(15, 118, 110, .18);
+  box-shadow: 0 10px 30px rgba(24, 32, 43, .06);
+  backdrop-filter: blur(16px);
+}
+
+.topbar::before {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  content: "";
+  background: linear-gradient(90deg, var(--teal-dark), var(--gold), var(--blue));
 }
 
 .brand {
@@ -56,8 +67,9 @@ a {
   width: 38px;
   height: 38px;
   color: white;
-  background: var(--teal-dark);
+  background: linear-gradient(135deg, var(--teal-dark), var(--blue));
   border-radius: 8px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .22), 0 10px 24px rgba(15, 118, 110, .22);
   font-size: 14px;
 }
 
@@ -70,7 +82,15 @@ a {
 }
 
 .nav a {
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
   text-decoration: none;
+  transition: color .18s ease, border-color .18s ease;
+}
+
+.nav a:hover {
+  color: var(--teal-dark);
+  border-color: rgba(179, 123, 24, .45);
 }
 
 .language-switch {
@@ -111,10 +131,10 @@ a {
 .ornament {
   position: absolute;
   inset: 0 0 auto;
-  height: 168px;
-  color: var(--teal-dark);
-  opacity: .95;
-  mask-image: linear-gradient(#000 45%, transparent);
+  height: 218px;
+  opacity: .9;
+  mask-image: linear-gradient(#000 34%, rgba(0, 0, 0, .82) 58%, transparent 100%);
+  pointer-events: none;
 }
 
 .ornament svg {

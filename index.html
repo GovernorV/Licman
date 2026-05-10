@@ -28,20 +28,46 @@
   <main id="top">
     <section class="hero">
       <div class="ornament" aria-hidden="true">
-        <svg viewBox="0 0 1200 160" role="img">
+        <svg viewBox="0 0 1440 190" role="img" preserveAspectRatio="none">
           <defs>
-            <pattern id="seal-grid" width="120" height="80" patternUnits="userSpaceOnUse">
-              <path d="M18 58h42l10-12h32" fill="none" stroke="currentColor" stroke-width="2" opacity=".18"/>
-              <path d="M24 20h42l8 10h28" fill="none" stroke="currentColor" stroke-width="2" opacity=".2"/>
-              <circle cx="92" cy="44" r="14" fill="none" stroke="currentColor" stroke-width="2" opacity=".22"/>
-              <path d="M86 44l4 4 9-10" fill="none" stroke="currentColor" stroke-width="2" opacity=".28"/>
+            <linearGradient id="ornament-bg" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#0b4f4a"/>
+              <stop offset=".46" stop-color="#eef7f5"/>
+              <stop offset="1" stop-color="#355c8a"/>
+            </linearGradient>
+            <radialGradient id="ornament-glow" cx="50%" cy="0%" r="80%">
+              <stop offset="0" stop-color="#ffffff" stop-opacity=".95"/>
+              <stop offset=".48" stop-color="#ffffff" stop-opacity=".18"/>
+              <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+            </radialGradient>
+            <pattern id="contract-lines" width="180" height="92" patternUnits="userSpaceOnUse">
+              <path d="M26 26h78M26 42h122M26 58h94" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".2"/>
+              <rect x="20" y="16" width="138" height="58" rx="8" fill="none" stroke="#fff" stroke-width="2" opacity=".14"/>
+              <circle cx="138" cy="58" r="13" fill="none" stroke="#f3b84a" stroke-width="3" opacity=".26"/>
+              <path d="M132 58l5 5 10-13" fill="none" stroke="#f3b84a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".34"/>
             </pattern>
           </defs>
-          <rect width="1200" height="160" fill="url(#seal-grid)"/>
-          <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3" opacity=".42">
-            <path d="M78 82c58-44 112-44 162 0s104 44 162 0 112-44 162 0 104 44 162 0 112-44 162 0 104 44 162 0"/>
-            <path d="M112 118h146m40 0h146m40 0h146m40 0h146m40 0h146"/>
-            <path d="M220 42h76m154 0h76m154 0h76m154 0h76"/>
+          <rect width="1440" height="190" fill="url(#ornament-bg)"/>
+          <rect width="1440" height="190" fill="url(#contract-lines)" opacity=".72"/>
+          <rect width="1440" height="190" fill="url(#ornament-glow)"/>
+          <path d="M-20 154C118 96 246 116 382 142s260 48 410-16 272-94 668 14" fill="none" stroke="#fff" stroke-width="34" stroke-linecap="round" opacity=".18"/>
+          <path d="M-18 150C120 92 248 112 384 138s258 48 408-16 272-94 668 14" fill="none" stroke="#0b4f4a" stroke-width="2" stroke-dasharray="10 14" opacity=".28"/>
+          <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1008 60h62l12 12h84" stroke="#0b4f4a" stroke-width="3" opacity=".42"/>
+            <path d="M1050 94h142" stroke="#0b4f4a" stroke-width="3" opacity=".28"/>
+            <path d="M1188 61l18 18 38-45" stroke="#f3b84a" stroke-width="8" opacity=".95"/>
+            <circle cx="1216" cy="58" r="54" stroke="#f3b84a" stroke-width="3" opacity=".28"/>
+            <path d="M202 82c28-26 72-25 100 0s72 26 102 0" stroke="#fff" stroke-width="6" opacity=".5"/>
+            <path d="M208 114h282M208 134h198" stroke="#fff" stroke-width="5" opacity=".34"/>
+            <path d="M684 62h46l16 16h44" stroke="#fff" stroke-width="5" opacity=".48"/>
+            <circle cx="818" cy="80" r="27" stroke="#fff" stroke-width="5" opacity=".42"/>
+            <path d="M806 80l9 9 20-24" stroke="#fff" stroke-width="5" opacity=".62"/>
+          </g>
+          <g fill="#f3b84a" opacity=".9">
+            <circle cx="934" cy="118" r="10"/>
+            <rect x="944" y="115" width="68" height="7" rx="3"/>
+            <rect x="998" y="120" width="9" height="20" rx="2"/>
+            <rect x="1014" y="120" width="9" height="15" rx="2"/>
           </g>
         </svg>
       </div>
