@@ -166,11 +166,13 @@ p {
 h1 {
   margin: 0;
   max-width: 780px;
-  font-size: clamp(48px, 6.3vw, 88px);
+  font-size: clamp(46px, 5.6vw, 76px);
   line-height: 1;
   letter-spacing: 0;
-  overflow-wrap: normal;
-  word-break: normal;
+  overflow-wrap: normal !important;
+  word-break: keep-all;
+  hyphens: none;
+  text-wrap: balance;
 }
 
 h2 {
