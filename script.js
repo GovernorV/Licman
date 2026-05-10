@@ -17,7 +17,8 @@ const translations = {
         { title: "Роли и доступ", text: "Администратор, супервайзер, пользователь и гость с ограничением доступа по ролям и отделам." },
         { title: "Поиск и фильтры", text: "Поиск по выбранному полю, фильтрация по датам, типу и признаку активности, сортировка по колонкам." },
         { title: "Экспорт", text: "Экспорт текущей таблицы в Excel для отчетности и дальнейшего анализа." },
-        { title: "Цветовая индикация", text: "Белый, желтый, оранжевый, красный и черный статусы помогают быстро увидеть приближающиеся и просроченные окончания." }
+        { title: "Цветовая индикация", text: "Белый, желтый, оранжевый, красный и черный статусы помогают быстро увидеть приближающиеся и просроченные окончания." },
+        { title: "Многоязычный интерфейс", text: "Интерфейс доступен на русском, английском, немецком, испанском, французском, итальянском и португальском языках." }
       ]
     },
     pricing: {
@@ -46,6 +47,12 @@ const translations = {
       title: "Основной экран",
       caption: "Главное окно: редактор лицензии, создание, управление, поиск, фильтр и таблица договоров."
     },
+    languages: {
+      eyebrow: "Языки",
+      title: "Многоязычный интерфейс для международных команд",
+      text: "На текущий момент поддерживаются русский, английский, немецкий, испанский, французский, итальянский и португальский языки. Новый язык можно легко добавить через отдельный языковой файл.",
+      items: ["Русский", "Английский", "Немецкий", "Испанский", "Французский", "Итальянский", "Португальский"]
+    },
     footer: { demo: "Демо-версия" }
   },
   en: {
@@ -66,7 +73,8 @@ const translations = {
         { title: "Roles and access", text: "Administrator, supervisor, user, and guest roles with department-based visibility and permissions." },
         { title: "Search and filters", text: "Search by selected field, filter by date, type, and active status, and sort records by table columns." },
         { title: "Excel export", text: "Export the current table view to Excel for reporting and further analysis." },
-        { title: "Color status", text: "White, yellow, orange, red, and black row states make upcoming renewals and expired licenses easy to spot." }
+        { title: "Color status", text: "White, yellow, orange, red, and black row states make upcoming renewals and expired licenses easy to spot." },
+        { title: "Multilingual interface", text: "The interface is available in Russian, English, German, Spanish, French, Italian, and Portuguese." }
       ]
     },
     pricing: {
@@ -94,6 +102,12 @@ const translations = {
       eyebrow: "Screenshots",
       title: "Main screen",
       caption: "Main window: license editor, creation, management, search, filters, and the contract table."
+    },
+    languages: {
+      eyebrow: "Languages",
+      title: "Multilingual interface for international teams",
+      text: "The application currently supports Russian, English, German, Spanish, French, Italian, and Portuguese. A new language can be added easily through a separate language file.",
+      items: ["Russian", "English", "German", "Spanish", "French", "Italian", "Portuguese"]
     },
     footer: { demo: "Demo version" }
   }

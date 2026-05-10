@@ -270,6 +270,7 @@ h3 {
 
 .feature-grid article,
 .price-card,
+.language-panel,
 .demo-limits {
   padding: 24px;
   background: var(--panel);
@@ -279,11 +280,39 @@ h3 {
 
 .feature-grid p,
 .price-card p,
+.language-panel p,
 .demo-limits li,
 .note,
 figcaption {
   color: var(--muted);
   line-height: 1.55;
+}
+
+.language-section {
+  padding-top: 20px;
+}
+
+.language-panel {
+  max-width: 980px;
+}
+
+.language-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.language-list span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  color: var(--teal-dark);
+  background: #eef7f5;
+  border: 1px solid rgba(15, 118, 110, .2);
+  border-radius: 8px;
+  font-weight: 800;
 }
 
 .pricing {
