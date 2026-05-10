@@ -44,8 +44,7 @@ const translations = {
     screens: {
       eyebrow: "Скриншоты",
       title: "Основной экран",
-      captionRu: "Русская версия главного окна: редактор лицензии, создание, управление, поиск, фильтр и таблица договоров.",
-      captionEn: "Английская версия главного окна: License editor, creation, management, search, filters, and contract table."
+      caption: "Главное окно: редактор лицензии, создание, управление, поиск, фильтр и таблица договоров."
     },
     footer: { demo: "Демо-версия" }
   },
@@ -94,8 +93,7 @@ const translations = {
     screens: {
       eyebrow: "Screenshots",
       title: "Main screen",
-      captionRu: "Russian main window: license editor, creation, management, search, filters, and the contract table.",
-      captionEn: "English main window: license editor, creation, management, search, filters, and the contract table."
+      caption: "Main window: license editor, creation, management, search, filters, and the contract table."
     },
     footer: { demo: "Demo version" }
   }
@@ -125,6 +123,12 @@ function applyLanguage(lang) {
   const heroScreenshot = document.querySelector("[data-screenshot='hero']");
   if (heroScreenshot) {
     heroScreenshot.src = lang === "en" ? "assets/licman-main-en.jpg" : "assets/licman-main-ru.jpg";
+    heroScreenshot.alt = lang === "en" ? "License Manager main screen" : "Главное окно Менеджера лицензий";
+  }
+  const mainScreenshot = document.querySelector("[data-screenshot='main']");
+  if (mainScreenshot) {
+    mainScreenshot.src = lang === "en" ? "assets/licman-main-en.jpg" : "assets/licman-main-ru.jpg";
+    mainScreenshot.alt = lang === "en" ? "License Manager main window in English" : "Главное окно Менеджера лицензий на русском языке";
   }
   localStorage.setItem("licman-language", lang);
 }
