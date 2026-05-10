@@ -122,7 +122,7 @@ a {
   position: relative;
   display: block;
   min-height: auto;
-  padding: 104px clamp(18px, 5vw, 72px) 58px;
+  padding: 142px 0 58px;
   overflow: hidden;
 }
 
@@ -147,7 +147,7 @@ a {
   position: relative;
   max-width: 720px;
   min-width: 0;
-  margin: 0;
+  margin: 0 clamp(18px, 5vw, 72px);
   text-align: left;
 }
 
@@ -230,8 +230,8 @@ h3 {
 
 .hero-screen {
   position: relative;
-  width: min(1180px, 100%);
-  margin: 56px 0 0;
+  width: 100%;
+  margin: 48px 0 0;
   min-width: 0;
 }
 
@@ -250,6 +250,9 @@ h3 {
   aspect-ratio: 1920 / 400;
   object-fit: cover;
   object-position: left top;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
 }
 
 .section {
