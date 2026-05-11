@@ -127,10 +127,28 @@ function applyLanguage(lang) {
     image.alt = screenshotAlt;
   });
   localStorage.setItem("licman-language", lang);
+
+  const h = (window.location.hash || "").toLowerCase();
+  if (h === "#ru" || h === "#en" || h === "") {
+    history.replaceState(null, "", "#" + lang);
+  }
 }
 
 document.querySelectorAll(".lang-btn").forEach((button) => {
   button.addEventListener("click", () => applyLanguage(button.dataset.lang));
 });
 
-applyLanguage(localStorage.getItem("licman-language") || "ru");
+function detectInitialLanguage() {
+  const h = (window.location.hash || "").toLowerCase();
+  if (h === "#en") return "en";
+  if (h === "#ru") return "ru";
+  return localStorage.getItem("licman-language") || "ru";
+}
+
+window.addEventListener("hashchange", () => {
+  const h = (window.location.hash || "").toLowerCase();
+  if (h === "#en") applyLanguage("en");
+  if (h === "#ru") applyLanguage("ru");
+});
+
+applyLanguage(detectInitialLanguage());
