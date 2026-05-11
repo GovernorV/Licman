@@ -104,6 +104,19 @@ const prices = {
   en: { buy: "€300", month: "€10", year: "€100" }
 };
 
+const crossPromoLinks = {
+  ru: [
+    "https://governorv.github.io/BoxPriceCalculator/#ru",
+    "https://governorv.github.io/DBSearch/#ru",
+    "https://governorv.github.io/BoxPalletizer/#ru"
+  ],
+  en: [
+    "https://governorv.github.io/BoxPriceCalculator/#en",
+    "https://governorv.github.io/DBSearch/#en",
+    "https://governorv.github.io/BoxPalletizer/#en"
+  ]
+};
+
 function getValue(path, lang) {
   return path.split(".").reduce((value, key) => value?.[key], translations[lang]);
 }
@@ -125,6 +138,9 @@ function applyLanguage(lang) {
   document.querySelectorAll("[data-screenshot]").forEach((image) => {
     image.src = screenshotSrc;
     image.alt = screenshotAlt;
+  });
+  document.querySelectorAll(".other-product-card > a").forEach((link, index) => {
+    if (crossPromoLinks[lang][index]) link.href = crossPromoLinks[lang][index];
   });
   localStorage.setItem("licman-language", lang);
 
