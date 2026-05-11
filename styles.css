@@ -13,6 +13,21 @@
   --shadow: 0 20px 60px rgba(24, 32, 43, .12);
 }
 
+html.night-theme {
+  color-scheme: dark;
+  --ink: #e8eefc;
+  --muted: #b6c2e2;
+  --line: rgba(255, 255, 255, .12);
+  --paper: #0b1220;
+  --panel: #111a30;
+  --teal: #2dd4bf;
+  --teal-dark: #79ffd2;
+  --gold: #ffd36a;
+  --blue: #6aa9ff;
+  --red: #ff8a8a;
+  --shadow: 0 22px 55px rgba(0, 0, 0, .28);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -52,6 +67,14 @@ a {
   height: 3px;
   content: "";
   background: linear-gradient(90deg, var(--teal-dark), var(--gold), var(--blue));
+}
+
+html.night-theme .topbar {
+  background:
+    linear-gradient(90deg, rgba(11, 18, 32, .94), rgba(17, 26, 48, .9)),
+    rgba(11, 18, 32, .88);
+  border-bottom-color: var(--line);
+  box-shadow: none;
 }
 
 .brand {
@@ -100,6 +123,10 @@ a {
   background: #e9eef3;
   border: 1px solid var(--line);
   border-radius: 8px;
+}
+
+html.night-theme .language-switch {
+  background: rgba(255, 255, 255, .06);
 }
 
 .lang-btn {
@@ -228,6 +255,10 @@ h3 {
   border: 1px solid var(--line);
 }
 
+html.night-theme .button.secondary {
+  background: rgba(255, 255, 255, .06);
+}
+
 .hero-screen {
   position: relative;
   width: auto;
@@ -288,6 +319,11 @@ figcaption {
 
 .pricing {
   background: #eef5f4;
+}
+
+html.night-theme .pricing,
+html.night-theme .other-products {
+  background: #0f172a;
 }
 
 .section-heading {

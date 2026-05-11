@@ -117,6 +117,13 @@ const crossPromoLinks = {
   ]
 };
 
+function applyAutoTheme() {
+  const hour = new Date().getHours();
+  const isDay = hour >= 6 && hour < 18;
+  document.documentElement.classList.toggle("day-theme", isDay);
+  document.documentElement.classList.toggle("night-theme", !isDay);
+}
+
 function getValue(path, lang) {
   return path.split(".").reduce((value, key) => value?.[key], translations[lang]);
 }
@@ -167,4 +174,6 @@ window.addEventListener("hashchange", () => {
   if (h === "#ru") applyLanguage("ru");
 });
 
+applyAutoTheme();
+setInterval(applyAutoTheme, 60 * 1000);
 applyLanguage(detectInitialLanguage());
