@@ -140,6 +140,9 @@ function applyLanguage(lang) {
   document.querySelectorAll(".lang-btn").forEach((button) => {
     button.classList.toggle("is-active", button.dataset.lang === lang);
   });
+  document.querySelectorAll("[data-ru-only]").forEach((element) => {
+    element.hidden = lang !== "ru";
+  });
   const screenshotSrc = lang === "en" ? "assets/licman-main-en-user.jpg" : "assets/licman-main-ru.jpg";
   const screenshotAlt = lang === "en" ? "License Manager main window in English" : "Главное окно Менеджера лицензий на русском языке";
   document.querySelectorAll("[data-screenshot]").forEach((image) => {

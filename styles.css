@@ -360,6 +360,14 @@ html.night-theme .other-products {
   margin-top: 28px;
 }
 
+.demo .button + .button {
+  margin-left: 12px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
 .demo-limits ul {
   margin: 0;
   padding-left: 20px;
@@ -499,5 +507,9 @@ html[lang="en"] .other-product-card img.lang-en {
 
   .button {
     width: 100%;
+  }
+
+  .demo .button + .button {
+    margin-left: 0;
   }
 }
