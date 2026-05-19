@@ -398,6 +398,10 @@ html[lang="en"] .lang-en {
   display: initial;
 }
 
+html[lang="en"] .button.lang-en {
+  display: inline-flex;
+}
+
 .other-products {
   background: #f7fbff;
 }
