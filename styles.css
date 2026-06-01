@@ -424,8 +424,9 @@ html[lang="en"] .button.lang-en {
 .other-product-card img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  background: #fff;
 }
 
 .other-product-card img.lang-en {
