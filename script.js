@@ -109,13 +109,15 @@ const crossPromoLinks = {
     "https://governorv.github.io/BoxPriceCalculator/#ru",
     "https://governorv.github.io/DBSearch/#ru",
     "https://governorv.github.io/BoxPalletizer/#ru",
-    "https://governorv.github.io/OptCutting/"
+    "https://governorv.github.io/OptCutting/",
+    "https://governorv.github.io/gost/"
   ],
   en: [
     "https://governorv.github.io/BoxPriceCalculator/#en",
     "https://governorv.github.io/DBSearch/#en",
     "https://governorv.github.io/BoxPalletizer/#en",
-    "https://governorv.github.io/OptCutting/?lang=en"
+    "https://governorv.github.io/OptCutting/?lang=en",
+    "https://governorv.github.io/gost/"
   ]
 };
 

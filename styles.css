@@ -408,7 +408,7 @@ html[lang="en"] .button.lang-en {
 
 .other-products-grid {
   display: grid;
-  gap: 18px;
+  gap: 24px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-top: 24px;
 }
@@ -424,7 +424,7 @@ html[lang="en"] .button.lang-en {
 .other-product-card img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
 }
 
@@ -441,7 +441,7 @@ html[lang="en"] .other-product-card img.lang-en {
 }
 
 .other-product-body {
-  padding: 20px;
+  padding: 22px;
 }
 
 .other-product-body h3 {
@@ -493,7 +493,16 @@ html[lang="en"] .other-product-card img.lang-en {
   }
 
   .price-grid,
-  .feature-grid,
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .other-products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
   .other-products-grid {
     grid-template-columns: 1fr;
   }
