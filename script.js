@@ -1,4 +1,4 @@
-const translations = {
+﻿const translations = {
   ru: {
     nav: { features: "Возможности", pricing: "Цены", demo: "Демо", screens: "Скриншоты" },
     hero: {
@@ -110,7 +110,7 @@ const crossPromoLinks = {
     "https://governorv.github.io/DBSearch/#ru",
     "https://governorv.github.io/BoxPalletizer/#ru",
     "https://governorv.github.io/OptCutting/",
-    "https://governorv.github.io/palletizer-site/",
+    "https://governorv.github.io/palletizer-site/#ru",
     "https://governorv.github.io/gost/"
   ],
   en: [
@@ -118,7 +118,7 @@ const crossPromoLinks = {
     "https://governorv.github.io/DBSearch/#en",
     "https://governorv.github.io/BoxPalletizer/#en",
     "https://governorv.github.io/OptCutting/?lang=en",
-    "https://governorv.github.io/palletizer-site/",
+    "https://governorv.github.io/palletizer-site/#en",
     "https://governorv.github.io/gost/"
   ]
 };
