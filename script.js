@@ -106,6 +106,7 @@ const prices = {
 
 const crossPromoLinks = {
   ru: [
+    "https://governorv.github.io/OptPacker/",
     "https://governorv.github.io/BoxPriceCalculator/#ru",
     "https://governorv.github.io/DBSearch/#ru",
     "https://governorv.github.io/BoxPalletizer/#ru",
@@ -115,6 +116,7 @@ const crossPromoLinks = {
     "https://governorv.github.io/gost/"
   ],
   en: [
+    "https://governorv.github.io/OptPacker/?lang=en",
     "https://governorv.github.io/BoxPriceCalculator/#en",
     "https://governorv.github.io/DBSearch/#en",
     "https://governorv.github.io/BoxPalletizer/#en",
