@@ -406,6 +406,56 @@ html[lang="en"] .button.lang-en {
   background: #f7fbff;
 }
 
+.review-section {
+  background: var(--bg);
+}
+
+.review-card {
+  max-width: 920px;
+  padding: clamp(24px, 4vw, 40px);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--teal);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.review-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.review-source {
+  color: var(--teal-dark);
+  font-size: 1.15rem;
+}
+
+.review-score {
+  color: #b7791f;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.review-by {
+  margin: 8px 0 22px;
+  color: var(--muted);
+}
+
+.review-copy {
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+.review-copy p {
+  margin: 0 0 14px;
+}
+
+.review-card .button {
+  margin-top: 10px;
+}
+
 .other-products-grid {
   display: grid;
   gap: 24px;
