@@ -31,7 +31,7 @@
     demo: {
       eyebrow: "Демо-версия",
       title: "Попробуйте программу перед внедрением",
-      link: "Открыть демо на Яндекс Диске",
+      link: "Скачать демоверсию",
       limitsTitle: "Ограничения демо",
       limits: [
         "Используется база данных LicManDemo.",
@@ -80,7 +80,7 @@
     demo: {
       eyebrow: "Demo version",
       title: "Try the application before rollout",
-      link: "Open demo on Yandex Disk",
+      link: "Download demo",
       limitsTitle: "Demo limitations",
       limits: [
         "The demo uses the LicManDemo database.",
